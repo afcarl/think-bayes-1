@@ -1,5 +1,6 @@
 var PMF = require('../index.js')
 
-var pmf = PMF().keys(['heads', 'tails'])
+var pmf = PMF(['heads', 'tails'])
 
-console.log(JSON.stringify(pmf))
+console.log('the probability of heads: ', pmf.prob('heads'))
+console.log('the probability of tails: ', pmf.prob('tails'))
